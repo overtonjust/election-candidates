@@ -1,0 +1,35 @@
+$white: #fff;
+
+.card{
+    min-width: fit-content;
+    width: 13em;
+    min-height: fit-content;
+    height: 18em;
+    background-color: $white;
+    border-radius: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90% 10%;
+    place-items: center;
+    align-items: center;
+    padding: 1.2em;
+    transition: .2s ease-in;
+
+    &__img{
+        grid-row: 1;
+        width: 10em;
+        height: 10em;
+        object-fit: cover;
+
+    }
+
+    &__name {
+        grid-row: 2;
+        font-size: 1.2em;
+    }
+}
+
+.card:hover {
+    transform: translateY(-.5em);
+    box-shadow: 0 .5em 1em rgb(146, 146, 146);
+}

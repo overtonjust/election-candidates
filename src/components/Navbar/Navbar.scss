@@ -1,0 +1,16 @@
+$blue: #012B5E;
+
+.navbar{
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: $blue;
+
+    img {
+        height: 4em;
+        width: 4em;
+        object-fit: cover;
+    }
+}

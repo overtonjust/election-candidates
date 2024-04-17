@@ -1,4 +1,6 @@
-import React from 'react'
+
+import Card from '../Card/Card';
+import './List.scss';
 
 const List = () => {
     const candidateNames = [
@@ -12,8 +14,22 @@ const List = () => {
         "Sean Patrick Maloney", "Chris Jacobs", "Joe Morelle"
     ];
 
+
   return (
-    <div>List</div>
+    <div className='list'>
+      <div className="list__top-row">
+        <p className='list__header'>People</p>  
+      </div>
+      <div className="list__card-row">
+        {candidateNames.map((candidate, index) => {
+          return (
+            <>
+              <Card className='list__card' name={candidate} key={index}/>    
+            </>
+          )
+        })}
+      </div>
+    </div>
   )
 }
 

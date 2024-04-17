@@ -1,0 +1,38 @@
+$beige: #E2D5D3;
+
+.list{
+    grid-row: 2;
+    height: 100%;
+    width: 100vw;
+    background-color: $beige;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 10% auto;
+    padding: 2em;
+    column-gap: 5em;
+    row-gap: 1.5em;
+    align-items: center;
+    place-items: center;
+    
+
+    &__top-row{
+        grid-row: 1;
+        place-self: start;
+    }
+    &__header {
+        font-weight: 600;
+        font-size: 1.7rem;
+        place-self: start;
+    }
+
+    &__card-row {
+        grid-row: 2;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 10em);
+        grid-template-rows: auto;
+        column-gap: 5em;
+        row-gap: 1.5em;
+    }
+
+}
